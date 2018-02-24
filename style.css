@@ -10,7 +10,6 @@ a {
 	-o-transition: .2s;
 	transition: .2s;
 	color: #2196f3;
-	opacity: .5;
 }
 
 a:hover, a:focus {
@@ -76,6 +75,10 @@ body {
 	font-size: 22px;
 	text-align: center;
 	line-height: 1.5em;
+}
+
+.hyperlink a {
+	opacity: .5;
 }
 
 .credits {
