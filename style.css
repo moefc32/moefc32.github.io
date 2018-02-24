@@ -1,0 +1,139 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none !important;
+}
+
+a {
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	color: #2196f3;
+	opacity: .5;
+}
+
+a:hover, a:focus {
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	color: #4caf50;
+	opacity: 1;
+}
+
+body {
+	position: relative;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: url('texture.png') fixed,
+	linear-gradient(to bottom left, #2196f3, #4caf50) fixed;
+	background-size: cover;
+	color: #424242;
+	line-height: 1.5em;
+	font-size: 16px;
+}
+
+.card {
+	display: block;
+	clear: both;
+	width: 70%;
+	margin: 50px auto;
+	padding: 15px;
+	background: #fff;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 5px 20px 5px rgba(0,0,0,.2);
+	box-shadow: 0px 5px 20px 5px rgba(0,0,0,.2);
+}
+
+.profile {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.profile img {
+	max-width: 100%;
+	border: solid 2px #eee;
+	border-radius: 50%;
+}
+
+.intro {
+	width: 65%;
+	float: left;
+}
+
+.nick {
+	margin: -10px 0 0;
+	color: #aaa;
+	font-size: 14px;
+}
+
+.hyperlink {
+	width: 80px;
+	float: right;
+	font-size: 22px;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.credits {
+	clear: both;
+	margin-bottom: 5px;
+	text-align: center;
+	color: #aaa;
+	font-size: 14px;
+}
+
+.credits a {
+	color: #aaa;
+	opacity: 1;
+}
+
+.credits a:hover, .credits a:focus {
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	color: #888;
+}
+
+@media (max-width: 900px) {
+	.profile, .intro, .hyperlink {
+		width: 100%;
+	}
+
+	.profile {
+		padding: 15px 30px;
+	}
+
+	.intro {
+		padding: 0 30px;
+	}
+
+	.intro h1, .intro .nick {
+		text-align: center;
+	}
+
+	.intro h1 {
+		margin-top: 0;
+	}
+
+	.hyperlink {
+		padding: 15px 30px 30px;
+	}
+}
+
+@media (min-width: 900px) {
+	.card {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		margin: auto;
+	}
+
+	.profile, .intro, .hyperlink {
+		padding: 15px;
+	}
+}
