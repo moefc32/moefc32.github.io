@@ -1,0 +1,10 @@
+/* TEAM */
+	Developer	: Faizal Chan.
+	Contact		: hai [at] mf-chan.com
+	From		: Bandung, Indonesia
+
+/* SITE */
+	Last update	: 2018/03/26
+	Language	: English
+	Standards	: HTML5, CSS3
+	Software	: Sublime Text
