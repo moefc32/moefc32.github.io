@@ -4,7 +4,7 @@
 	From		: Bandung, Indonesia
 
 /* SITE */
-	Last update	: 2018/03/26
+	Last update	: 2018/06/19
 	Language	: English
 	Standards	: HTML5, CSS3
 	Software	: Sublime Text
