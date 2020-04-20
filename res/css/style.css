@@ -58,7 +58,7 @@ body {
 }
 
 .tab li:first-child {
-background: #fff;
+	background: #fff;
 }
 
 .tab li .fa-fw {
