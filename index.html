@@ -39,7 +39,15 @@
 				<a href="mailto:hai@mf-chan.com"><i class="fas fa-envelope fa-fw"></i></a>
 			</div>
 			<div class="credits">
-				<strong>Mfc</strong> &copy; 2020, powered by <strong><a href="https://github.com">GitHub</a></strong>
+				<strong>Mfc</strong> &copy;
+					<script>
+						if (new Date().getFullYear() > 2018) {
+							document.write('2018 - ' + new Date().getFullYear() + ',');
+						} else {
+							document.write(new Date().getFullYear() + ',');
+						}
+					</script>
+				powered by <strong><a href="https://github.com">GitHub</a></strong>
 			</div>
 		</div>
 	</div>
