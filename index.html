@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="res/img/favicon.png">
 	<title>Mfc Website</title>
 	<link rel="stylesheet" href="res/css/framework.css" />
@@ -10,17 +10,22 @@
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-131278165-1');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-131278165-1');
 	</script>
 </head>
 <body>
 	<div class="base">
 		<ul class="tab">
 			<li><i class="fas fa-user fa-fw"></i>Profile</li>
-			<li><a href="./portfolio"><i class="fas fa-book fa-fw"></i> Portfolio</a></li>
+			<li><a href="./portfolio">
+				<i class="fas fa-book fa-fw"></i> Portfolio
+			</a></li>
+			<li><a href="https://certificate.mf-chan.com">
+				<i class="fas fa-book fa-fw"></i> Certificate
+			</a></li>
 		</ul>
 		<div class="card">
 			<div class="photo">
@@ -29,7 +34,7 @@
 			<div class="intro">
 				<h1>Faizal Chan.</h1>
 				<p class="nick">@moefc32</p>
-				<p>A bachelor of design and master of management from Telkom University. Need help for your design problems? Feel free to <a href="mailto:hai@mf-chan.com">contact me</a>!</p>
+				<p class="description">Strong design management professional with a master of management degree, focused in UX from Telkom University. Need help for your design problems? Feel free to <a href="mailto:hai@mf-chan.com">contact me</a>!</p>
 			</div>
 			<div class="hyperlink">
 				<a href="https://www.linkedin.com/in/moefc32/"><i class="fab fa-linkedin fa-fw"></i></a>
@@ -41,28 +46,17 @@
 			</div>
 			<div class="credits">
 				<strong>Mfc</strong> &copy;
-					<script>
-						if (new Date().getFullYear() > 2018) {
-							document.write('2018 - ' + new Date().getFullYear() + ',');
-						} else {
-							document.write(new Date().getFullYear() + ',');
-						}
-					</script>
-				powered by <strong><a href="https://github.com">GitHub</a></strong>
+				<script>
+					if (new Date().getFullYear() > 2018) {
+						document.write('2018 - ' + new Date().getFullYear());
+					} else {
+						document.write(new Date().getFullYear());
+					}
+				</script>
 			</div>
 		</div>
 	</div>
 
-	<script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/5ded869c43be710e1d212442/default';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-		})();
-	</script>
+	<script src="res/js/script.js"></script>
 </body>
 </html>

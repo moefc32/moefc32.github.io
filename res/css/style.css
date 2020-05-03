@@ -70,9 +70,7 @@ body {
 .card {
 	padding: 15px;
 	background: #fff;
-	border-top-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-radius: 15px;
 	box-shadow: 0px 5px 20px 5px rgba(0,0,0,.2);
 }
 
@@ -106,21 +104,20 @@ body {
 }
 
 .intro h1 {
-	margin: 15px 0 0;
+	margin: 0;
 	font-weight: bold;
-	font-size: 34px;
+	font-size: 2em;
 }
 
 .nick {
 	margin: 5px 0 15px;
 	color: #aaa;
-	font-size: 14px;
 }
 
 .hyperlink {
 	width: 80px;
 	float: right;
-	font-size: 22px;
+	font-size: 1.25em;
 	text-align: center;
 	line-height: 1.618em;
 }
@@ -134,7 +131,6 @@ body {
 	margin-bottom: 5px;
 	text-align: center;
 	color: #aaa;
-	font-size: 14px;
 }
 
 .credits a {
@@ -142,12 +138,19 @@ body {
 	opacity: 1;
 }
 
-.credits a:hover, .credits a:focus {
+.credits a:hover,
+.credits a:focus {
 	color: #888;
 }
 
 @media (max-width: 899px) {
-	.photo, .intro, .hyperlink {
+	.tab {
+		display: none;
+	}
+
+	.photo,
+	.intro,
+	.hyperlink {
 		width: 100%;
 	}
 
@@ -158,10 +161,6 @@ body {
 	.intro {
 		padding: 0 30px;
 		text-align: center;
-	}
-
-	.intro h1 {
-		margin-top: 0;
 	}
 
 	.hyperlink {
@@ -182,7 +181,34 @@ body {
 		margin: auto;
 	}
 
-	.photo, .intro, .hyperlink {
+	.photo,
+	.intro,
+	.hyperlink {
 		padding: 15px;
+	}
+
+	.nick,
+	.credits {
+		font-size: .85em;
+	}
+
+	.intro h1 {
+		margin: 5px 0 0;
+		font-size: 2.5em;
+	}
+
+	.description {
+		margin-bottom: 30px;
+	}
+
+	.card {
+		position: relative;
+		border-top-left-radius: 0;
+	}
+
+	.hyperlink {
+		position: absolute;
+		top: 15px;
+		right: 15px;
 	}
 }
