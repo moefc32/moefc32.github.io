@@ -38,7 +38,7 @@ body {
 .base {
 	width: 70%;
 	max-width: 900px;
-	margin: 50px auto;
+	margin: 50px auto 70px;
 }
 
 .tab {
@@ -70,7 +70,6 @@ body {
 }
 
 .card {
-	margin-bottom: 15px;
 	padding: 15px;
 	background: #fff;
 	border-radius: 15px;
