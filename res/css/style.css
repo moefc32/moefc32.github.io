@@ -38,7 +38,7 @@ body {
 .base {
 	width: 70%;
 	max-width: 900px;
-	margin: 50px auto 70px;
+	margin: 50px auto;
 }
 
 .tab {
