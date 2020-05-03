@@ -32,7 +32,7 @@ body {
 	background-size: cover;
 	color: #424242;
 	line-height: 1.618em;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .base {
@@ -146,7 +146,7 @@ body {
 	color: #888;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 899px) {
 	.photo, .intro, .hyperlink {
 		width: 100%;
 	}
@@ -170,6 +170,10 @@ body {
 }
 
 @media (min-width: 900px) {
+	body {
+		font-size: 16px;
+	}
+
 	.base {
 		position: absolute;
 		top: 50%;
