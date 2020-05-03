@@ -70,6 +70,7 @@ body {
 }
 
 .card {
+	margin-bottom: 15px;
 	padding: 15px;
 	background: #fff;
 	border-radius: 15px;
