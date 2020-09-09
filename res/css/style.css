@@ -132,7 +132,7 @@ body {
 	position: relative;
 	display: block;
 	background: url("../img/texture.png") fixed,
-		linear-gradient(to bottom left, #4caf50, #2196f3) fixed;
+		linear-gradient(to bottom left, #419544, #1c80cf) fixed;
 	text-align: center;
 	font-size: 1.5em;
 	line-height: 3em;
