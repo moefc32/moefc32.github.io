@@ -36,7 +36,7 @@ body {
 }
 
 .base {
-	width: 70%;
+	width: 90%;
 	max-width: 900px;
 	margin: 50px auto;
 }
@@ -88,9 +88,10 @@ body {
 }
 
 .photo {
-	float: left;
-	width: 100%;
-	padding: 15px 30px;
+	float: none;
+	width: 50%;
+	margin: 0 auto;
+	padding: 15px 0;
 	text-align: center;
 }
 
@@ -103,7 +104,7 @@ body {
 
 .intro {
 	float: left;
-	padding: 0 30px;
+	padding: 0 15px;
 	text-align: center;
 }
 
@@ -160,6 +161,7 @@ body {
 		position: absolute;
 		top: 50%;
 		left: 50%;
+		width: 70%;
 		transform: translate(-50%,-50%);
 		margin: auto;
 	}
@@ -179,8 +181,10 @@ body {
 	}
 
 	.photo {
+		float: left;
 		width: 20%;
 		padding: 15px;
+		margin: 0;
 	}
 
 	.intro {
