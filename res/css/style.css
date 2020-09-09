@@ -24,7 +24,6 @@ a {
 
 body {
 	position: relative;
-	height: 100vh;
 	margin: 0;
 	padding: 0;
 	background: url("../img/texture.png") fixed,
@@ -36,9 +35,9 @@ body {
 }
 
 .base {
-	width: 95%;
-	max-width: 900px;
-	margin: 50px auto;
+	width: 100%;
+	max-width: 90%;
+	margin: 30px auto;
 }
 
 .tab {
@@ -89,7 +88,8 @@ body {
 
 .photo {
 	float: none;
-	width: 50%;
+	width: 30%;
+	min-width: 100px;
 	margin: 0 auto;
 	padding: 15px 0;
 	text-align: center;
@@ -100,6 +100,7 @@ body {
 	max-width: 200px;
 	border: solid 2px #eee;
 	border-radius: 50%;
+	transition: .25s;
 }
 
 .intro {
@@ -176,7 +177,8 @@ body {
 
 @media (min-width:600px) {
 	.base {
-		width: 80%;
+		max-width: 550px;
+		margin: 50px auto;
 	}
 
 	.intro {
@@ -186,14 +188,17 @@ body {
 
 @media (min-width: 900px) {
 	body {
+		width: 100vw;
+		height: 100vh;
 		font-size: 16px;
 	}
 
 	.base {
 		position: absolute;
-		top: 50%;
+		top: calc(50% - 15px);
 		left: 50%;
-		width: 70%;
+		max-width: 800px;
+		margin: 0 auto;
 		transform: translate(-50%, -50%);
 		margin: auto;
 	}
@@ -219,15 +224,19 @@ body {
 		margin: 0;
 	}
 
+	.photo img:hover {
+		transform: rotate(5deg);
+	}
+
 	.intro {
 		width: 65%;
-		padding: 15px;
+		padding: 0 15px;
 		text-align: left;
 	}
 
 	.intro h1 {
-		margin: 5px 0 0;
-		font-size: 2.5em;
+		margin: 15px 0 0;
+		font-size: 2em;
 	}
 
 	.description {
