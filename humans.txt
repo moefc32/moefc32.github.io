@@ -4,7 +4,7 @@ Contact     : hai[at]mf-chan.com
 From        : Bandung, Indonesia
 
 /* SITE */
-Last update : 2020/04/21
+Last update : 2020/09/15
 Language    : English
-Standards   : HTML5, CSS3
-Software    : Sublime Text
+Standards   : HTML5, CSS3, JS-ES6
+Software    : VSCodium
