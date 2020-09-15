@@ -86,7 +86,7 @@ body {
 .photo img {
 	width: 100%;
 	max-width: 200px;
-	border: 2px solid #eee;
+	border: solid 2px #eee;
 	border-radius: 50%;
 	transition: .25s;
 }
@@ -126,7 +126,7 @@ body {
 	font-size: 1.25em;
 	line-height: 3em;
 	color: #fff;
-	border: 1px solid #ddd;
+	border: solid 1px #ddd;
 	border-radius: 5px;
 }
 
