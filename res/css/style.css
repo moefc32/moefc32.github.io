@@ -132,6 +132,10 @@ body {
 	border-radius: 5px;
 }
 
+.mobile-tab a:not(:first-child) span {
+	margin-top: 10px;
+}
+
 .hyperlink {
 	width: 100%;
 	padding: 15px;
