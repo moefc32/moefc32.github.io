@@ -220,7 +220,11 @@ header .search-box {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 15px;
+}
+
+.carousel .primary h1:empty {
+    display: none;
 }
 
 .carousel .secondary h2 {
