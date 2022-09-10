@@ -394,6 +394,32 @@ h2.title {
     line-height: inherit;
 }
 
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button {
+    box-sizing: content-box;
+    line-height: normal;
+}
+
+.gsc-control-cse {
+    padding: 0 !important;
+}
+
+.main {
+    justify-content: center;
+    align-items: center;
+}
+
+.main>div:first-child {
+    width: 100%;
+    margin-bottom: 15px;
+    background: #ddd;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     clear: both;
     margin: 0;
@@ -411,19 +437,6 @@ footer a {
 footer a:hover,
 footer a:focus {
     color: #666;
-}
-
-input.gsc-input,
-.gsc-input-box,
-.gsc-input-box-hover,
-.gsc-input-box-focus,
-.gsc-search-button {
-    box-sizing: content-box;
-    line-height: normal;
-}
-
-.gsc-control-cse {
-    padding: 0 !important;
 }
 
 /* tablet screen view */
