@@ -28,7 +28,7 @@ body {
     margin: 30px auto;
 }
 
-.tab {
+#tab {
     display: none;
     margin: 0;
     padding: 0;
@@ -36,23 +36,23 @@ body {
     font-size: .85em;
 }
 
-.tab li {
+#tab li {
     display: inline-block;
     background: #ddd;
     cursor: pointer;
     border-radius: 10px 10px 0 0;
 }
 
-.tab li:first-child {
+#tab li:first-child {
     background: #fff;
 }
 
-.tab li a {
+#tab li a {
     display: inline-block;
     padding: 5px 20px 5px 15px;
 }
 
-.tab li a .fa-fw {
+#tab li a .fa-fw {
     margin-right: 5px;
     padding: 0;
 }
@@ -113,12 +113,12 @@ body {
     margin-bottom: 15px;
 }
 
-.mobile-tab {
+#mobile-tab {
     clear: both;
     padding: 15px 0;
 }
 
-.mobile-tab span {
+#mobile-tab span {
     position: relative;
     display: block;
     background: url(texture.png) fixed,
@@ -132,7 +132,7 @@ body {
     border-radius: 5px;
 }
 
-.mobile-tab a:not(:first-child) span {
+#mobile-tab a:not(:first-child) span {
     margin-top: 10px;
 }
 
@@ -196,7 +196,7 @@ body {
         margin: auto;
     }
 
-    .tab {
+    #tab {
         display: initial;
     }
 
@@ -230,7 +230,7 @@ body {
         margin-bottom: 30px;
     }
 
-    .mobile-tab {
+    #mobile-tab {
         display: none;
     }
 
