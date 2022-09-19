@@ -352,6 +352,22 @@ h2.title {
     transition: .15s all;
 }
 
+.medium-feed-thumbnail {
+    flex: 0 0 150px;
+    height: 75px;
+    background-color: #ddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+}
+
+.medium-feed-title {
+    color: #424242;
+    line-height: 1.35em;
+}
+
 .section-title {
     margin-bottom: 30px;
     padding-bottom: 5px;
@@ -509,10 +525,6 @@ footer a:focus {
 @media (min-width: 992px) {
     .research-showcase a {
         line-height: 2.5em;
-    }
-
-    .medium-feed {
-        padding-right: 50px;
     }
 }
 
