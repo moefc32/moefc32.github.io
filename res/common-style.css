@@ -170,6 +170,10 @@ header .search-box {
     margin-bottom: 30px;
 }
 
+.carousel .primary .youtube-wrapper h1 {
+    color: #424242;
+}
+
 .carousel .secondary .youtube-wrapper {
     overflow: hidden
 }
