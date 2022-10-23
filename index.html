@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="res/style.css">
 
+    <script src="res/alpine.min.js" defer></script>
+    <script src="res/script.js"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -32,10 +35,18 @@
     </script>
 </head>
 
-<body>
+<body x-data="bodyData()" x-init="retrieveRepos">
     <div class="base">
         <ul id="tab">
             <li><a><i class="fas fa-user fa-fw"></i>Profile</a></li>
+            <template x-for="item in links">
+                <li>
+                    <a :href="item.link" target="_blank">
+                        <i :class="'fas ' + item.icon + ' fa-fw'"></i>
+                        <span x-text="item.name"></span>
+                    </a>
+                </li>
+            </template>
         </ul>
         <div class="card">
             <div class="photo">
@@ -48,7 +59,13 @@
                     in UX from Telkom University. Need help for your design problems? Feel free to <a
                         href="mailto:hai@mf-chan.com" target="_blank">contact me</a>!</p>
             </div>
-            <div id="mobile-tab"></div>
+            <div id="mobile-tab">
+                <template x-for="item in links">
+                    <a :href="item.link" target="_blank">
+                        <span x-text="item.name"></span>
+                    </a>
+                </template>
+            </div>
             <div class="hyperlink">
                 <a href="https://www.linkedin.com/in/moefc32/" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
                 <a href="https://behance.net/moefc32" target="_blank"><i class="fab fa-behance fa-fw"></i></a>
@@ -68,9 +85,19 @@
                 </script>
             </div>
         </div>
+        <div class="github-repos" x-show="githubToggle">
+            <template x-for="repo in githubRepos">
+                <div class="repository">
+                    <a :href="repo.html_url" target="_blank">
+                        <span x-text="repo.name"></span>
+                        <span x-text="repo.description ?? 'No description yet'"></span>
+                    </a>
+                </div>
+            </template>
+        </div>
+        <button class="github-toggle" @click="githubToggle = !githubToggle;"
+            x-text="githubToggle ? 'Close This List' : 'View My Project Repositories'"></button>
     </div>
-
-    <script src="res/script.js"></script>
 </body>
 
 </html>
