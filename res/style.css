@@ -28,7 +28,7 @@ body {
     margin: 30px auto;
 }
 
-#tab {
+.tab {
     display: none;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ body {
     font-size: .85em;
 }
 
-#tab li {
+.tab li {
     display: inline-block;
     margin-right: 5px;
     background: #ddd;
@@ -44,16 +44,16 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-#tab li:first-child {
+.tab li:first-child {
     background: #fff;
 }
 
-#tab li a {
+.tab li a {
     display: inline-block;
     padding: 5px 20px 5px 15px;
 }
 
-#tab li a .fa-fw {
+.tab li a .fa-fw {
     margin-right: 5px;
     padding: 0;
 }
@@ -114,12 +114,12 @@ body {
     margin-bottom: 15px;
 }
 
-#mobile-tab {
+.mobile-tab {
     clear: both;
     padding: 15px 0;
 }
 
-#mobile-tab span {
+.mobile-tab span {
     position: relative;
     display: block;
     background: url(texture.png) fixed,
@@ -133,7 +133,7 @@ body {
     border-radius: 5px;
 }
 
-#mobile-tab a:not(:first-child) span {
+.mobile-tab a:not(:first-child) span {
     margin-top: 10px;
 }
 
@@ -146,6 +146,7 @@ body {
 }
 
 .hyperlink a {
+    padding: 0 2px;
     opacity: .5;
 }
 
@@ -188,16 +189,21 @@ body {
 
 @media (min-width: 900px) {
     body {
+        position: relative;
         width: 100%;
+        min-height: 100vh;
         overflow: auto;
     }
 
     .base {
-        margin: calc(50vh - 160px) auto 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, calc(-50% - 50px));
         max-width: 800px;
     }
 
-    #tab {
+    .tab {
         display: initial;
     }
 
@@ -231,7 +237,7 @@ body {
         margin-bottom: 30px;
     }
 
-    #mobile-tab {
+    .mobile-tab {
         display: none;
     }
 
@@ -244,6 +250,11 @@ body {
         font-size: 1.25em;
     }
 
+    .hyperlink a {
+        display: block;
+        padding: 0;
+    }
+
     .credits {
         font-size: .85em;
     }
@@ -251,16 +262,30 @@ body {
     .github-repos {
         display: block;
         width: calc(100% - 50px);
+        height: 15px;
         margin: -15px auto 0;
-        padding: 30px 0 15px;
         background: #fff;
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25);
         border-radius: 0 0 5px 5px;
+        overflow-y: auto;
+        transition: height .5s ease;
+    }
+
+    .github-repos.open {
+        height: calc(100vh - 400px);
     }
 
     .github-repos .repository {
         padding: 10px 15px;
         transition: .15s;
+    }
+
+    .github-repos .repository:first-of-type {
+        margin-top: 30px;
+    }
+
+    .github-repos .repository:last-child {
+        margin-bottom: 15px;
     }
 
     .github-repos .repository:hover {

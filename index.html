@@ -37,12 +37,12 @@
 
 <body x-data="bodyData()" x-init="retrieveRepos">
     <div class="base">
-        <ul id="tab">
+        <ul class="tab">
             <li><a><i class="fas fa-user fa-fw"></i>Profile</a></li>
-            <template x-for="item in links">
+            <template x-for="item in subdomains">
                 <li>
                     <a :href="item.link" target="_blank">
-                        <i :class="'fas ' + item.icon + ' fa-fw'"></i>
+                        <i :class="item.icon"></i>
                         <span x-text="item.name"></span>
                     </a>
                 </li>
@@ -59,20 +59,17 @@
                     in UX from Telkom University. Need help for your design problems? Feel free to <a
                         href="mailto:hai@mf-chan.com" target="_blank">contact me</a>!</p>
             </div>
-            <div id="mobile-tab">
-                <template x-for="item in links">
+            <div class="mobile-tab">
+                <template x-for="item in subdomains">
                     <a :href="item.link" target="_blank">
                         <span x-text="item.name"></span>
                     </a>
                 </template>
             </div>
             <div class="hyperlink">
-                <a href="https://www.linkedin.com/in/moefc32/" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
-                <a href="https://behance.net/moefc32" target="_blank"><i class="fab fa-behance fa-fw"></i></a>
-                <a href="https://dribbble.com/moefc32" target="_blank"><i class="fab fa-dribbble fa-fw"></i></a>
-                <a href="https://github.com/moefc32" target="_blank"><i class="fab fa-github fa-fw"></i></a>
-                <a href="https://medium.com/@moefc32" target="_blank"><i class="fab fa-medium fa-fw"></i></a>
-                <a href="mailto:hai@mf-chan.com" target="_blank"><i class="fas fa-envelope fa-fw"></i></a>
+                <template x-for="item in hyperlinks">
+                    <a :href="item.link" target="_blank"><i :class="item.icon"></i></a>
+                </template>
             </div>
             <div class="credits">
                 <strong>Mfc</strong> &copy;
@@ -85,7 +82,7 @@
                 </script>
             </div>
         </div>
-        <div class="github-repos" x-show="githubToggle">
+        <div class="github-repos" :class="githubToggle ? 'open' : ''">
             <template x-for="repo in githubRepos">
                 <div class="repository">
                     <a :href="repo.html_url" target="_blank">
