@@ -538,7 +538,7 @@ footer a:focus {
     }
 
     object {
-        height: 400px;
+        height: calc(100vh - 300px);
     }
 
     .certificate-detail {
