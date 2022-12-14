@@ -448,10 +448,6 @@ input.gsc-input,
     align-items: center;
 }
 
-#modal-content .hide-modal-embed {
-    display: none !important;
-}
-
 .meet-container {
     display: flex;
     justify-content: center;
