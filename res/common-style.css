@@ -227,6 +227,10 @@ header .search-box {
     color: #fff;
 }
 
+#portfolio-toggle button:focus {
+    outline: 0;
+}
+
 aside .search-box {
     margin-bottom: 15px;
 }
