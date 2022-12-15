@@ -34,12 +34,6 @@ object img {
     font-size: 16px !important;
 }
 
-.far,
-.fas,
-.fab {
-    margin-right: 5px;
-}
-
 header .home a {
     margin: 0;
     font-size: 1.5em;
