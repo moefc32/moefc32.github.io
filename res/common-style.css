@@ -41,8 +41,8 @@ header .home a {
     color: #424242;
 }
 
-header .search-box {
-    display: none;
+header .gcse-search {
+    width: 100%;
 }
 
 .scroll-indicator {
@@ -232,10 +232,6 @@ header .search-box {
     box-shadow: none;
 }
 
-aside .search-box {
-    margin-bottom: 15px;
-}
-
 aside .discord {
     background: #7289da;
     color: #fff;
@@ -297,7 +293,7 @@ h2.title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 15px;
     background: #eee;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .15);
@@ -309,7 +305,7 @@ h2.title {
     height: 50vw;
     max-width: 180px;
     max-height: 180px;
-    margin-top: -50px;
+    margin-top: -70px;
 }
 
 #orcid-publications li {
@@ -524,17 +520,6 @@ footer a:focus {
     header .home a {
         font-size: 1.75em;
         line-height: 100px;
-    }
-
-    header .search-box {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 100px;
-    }
-
-    header .search-box>div {
-        width: 100%;
     }
 
     object {
