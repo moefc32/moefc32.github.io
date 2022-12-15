@@ -293,6 +293,10 @@ h2.title {
     line-height: 1.25em;
 }
 
+.paper-title {
+    color: #424242;
+}
+
 .research-showcase a {
     display: inline-block;
     width: 100%;
