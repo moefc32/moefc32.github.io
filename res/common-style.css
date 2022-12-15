@@ -274,7 +274,7 @@ aside .discord a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .15);
     border-radius: 15px;
     overflow: hidden;
 }
@@ -293,6 +293,25 @@ h2.title {
     line-height: 1.25em;
 }
 
+.researcher-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 15px;
+    background: #eee;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .15);
+    border-radius: 30px;
+}
+
+.researcher-profile img {
+    width: 50vw;
+    height: 50vw;
+    max-width: 180px;
+    max-height: 180px;
+    margin-top: -50px;
+}
+
 #orcid-publications li {
     padding-left: 10px;
 }
@@ -304,7 +323,6 @@ h2.title {
 #research-showcase a {
     display: inline-block;
     width: 100%;
-    margin-bottom: 15px;
     padding: 15px 30px;
     text-align: center;
     border: solid 1px #ddd;
@@ -556,12 +574,22 @@ footer a:focus {
 /* desktop screen view */
 
 @media (min-width: 992px) {
+    .researcher-profile {
+        margin-top: 0;
+        border-radius: 500px 50px 50px 500px;
+    }
+
+    .researcher-profile img {
+        margin-top: 0;
+    }
+
     #research-showcase a {
         line-height: 2.5em;
     }
 
     .orcid-stats #orcid-publications {
-        height: 400px;
+        height: calc(100vh - 280px);
+        min-height: 400px;
         overflow-y: auto;
     }
 }
