@@ -538,11 +538,6 @@ footer a:focus {
     .research-showcase a {
         line-height: 2em;
     }
-
-    .orcid-stats #orcid-publications {
-        height: 400px;
-        overflow-y: auto;
-    }
 }
 
 /* desktop screen view */
@@ -550,6 +545,11 @@ footer a:focus {
 @media (min-width: 992px) {
     .research-showcase a {
         line-height: 2.5em;
+    }
+
+    .orcid-stats #orcid-publications {
+        height: 400px;
+        overflow-y: auto;
     }
 }
 
