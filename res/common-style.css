@@ -297,7 +297,7 @@ h2.title {
     color: #424242;
 }
 
-.research-showcase a {
+#research-showcase a {
     display: inline-block;
     width: 100%;
     margin-bottom: 15px;
@@ -307,31 +307,31 @@ h2.title {
     border-radius: 5px;
 }
 
-.research-showcase a.gscholar:hover {
+#research-showcase a.gscholar:hover {
     background: #4285f4;
 }
 
-.research-showcase a.orcid:hover {
+#research-showcase a.orcid:hover {
     background: #9dc928;
 }
 
-.research-showcase a.scopus:hover {
+#research-showcase a.scopus:hover {
     background: #ff8200;
 }
 
-.research-showcase a.figshare:hover {
+#research-showcase a.figshare:hover {
     background: #c63753;
 }
 
-.research-showcase a.researchgate:hover {
+#research-showcase a.researchgate:hover {
     background: #00ccbb;
 }
 
-.research-showcase a:hover img {
+#research-showcase a:hover img {
     filter: brightness(0) invert(1);
 }
 
-.research-showcase img {
+#research-showcase img {
     max-width: 75%;
     max-height: 50px;
     transition: .15s all;
@@ -544,7 +544,7 @@ footer a:focus {
         font-size: 2em;
     }
 
-    .research-showcase a {
+    #research-showcase a {
         line-height: 2em;
     }
 }
@@ -552,7 +552,7 @@ footer a:focus {
 /* desktop screen view */
 
 @media (min-width: 992px) {
-    .research-showcase a {
+    #research-showcase a {
         line-height: 2.5em;
     }
 
@@ -565,7 +565,7 @@ footer a:focus {
 /* large desktop screen view */
 
 @media (min-width: 1200px) {
-    .research-showcase a {
+    #research-showcase a {
         line-height: 3em;
     }
 }
