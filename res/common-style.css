@@ -293,6 +293,10 @@ h2.title {
     line-height: 1.25em;
 }
 
+#orcid-publications li {
+    padding-left: 10px;
+}
+
 .paper-title {
     color: #424242;
 }
