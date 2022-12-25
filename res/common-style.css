@@ -79,7 +79,7 @@ header .gcse-search {
     font-size: 16px;
 }
 
-.card {
+.display-card {
     position: relative;
     width: 100%;
     padding: 15px;
@@ -88,18 +88,18 @@ header .gcse-search {
     border-radius: 5px 5px 0 0;
 }
 
-.card .thumb {
+.display-card .thumb {
     display: block;
     width: 100%;
     padding-top: 70%;
     background-size: contain !important;
 }
 
-.card .lazy {
+.display-card .lazy {
     background-image: none !important;
 }
 
-.card a.category-label {
+.display-card a.category-label {
     position: absolute;
     z-index: 100;
     bottom: 10px;
