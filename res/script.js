@@ -9,20 +9,25 @@ const subdomains = [
         link: 'https://cv.mf-chan.com'
     },
     {
-        name: 'Design',
-        icon: 'fas fa-folder fa-fw',
-        link: 'https://design.mf-chan.com'
-    },
-    {
         name: 'Research',
         icon: 'fas fa-search fa-fw',
         link: 'https://research.mf-chan.com'
     },
     {
+        name: 'Design',
+        icon: 'fas fa-folder fa-fw',
+        link: 'https://design.mf-chan.com'
+    },
+    {
+        name: 'Code',
+        icon: 'fas fa-code fa-fw',
+        link: 'https://code.mf-chan.com'
+    },
+    {
         name: 'Certificate',
         icon: 'fas fa-file fa-fw',
         link: 'https://certificate.mf-chan.com'
-    }
+    },
 ];
 
 const hyperlinks = [
