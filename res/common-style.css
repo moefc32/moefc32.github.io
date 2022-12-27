@@ -582,6 +582,10 @@ footer a:focus {
 /* large desktop screen view */
 
 @media (min-width: 1200px) {
+    .researcher-profile {
+        margin-left: -30px;
+    }
+
     #research-showcase a {
         line-height: 3em;
     }
