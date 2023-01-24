@@ -469,7 +469,7 @@ input.gsc-input,
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url(texture.png) fixed, #424242;
+    background: url(meet.jpg) fixed, #424242;
     background-size: cover;
     z-index: -1;
 }
