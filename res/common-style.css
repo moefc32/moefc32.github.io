@@ -447,23 +447,16 @@ input.gsc-input,
 }
 
 .meet-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
 }
 
 #meet-loginform {
-    position: fixed;
-    top: 50%;
-    left: 50%;
     width: calc(100% - 60px);
     max-width: 400px;
     min-height: 320px;
     margin: 30px;
-    transform: translate(calc(-50% - 30px), calc(-50% - 30px));
-    z-index: 200;
+    box-sizing: border-box;
 }
 
 #meet-loginform>div {
@@ -471,10 +464,14 @@ input.gsc-input,
 }
 
 #meet-iframe {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background: url(texture.png) fixed, #424242;
     background-size: cover;
+    z-index: -1;
 }
 
 #meet-iframe iframe {
