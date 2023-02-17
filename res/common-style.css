@@ -457,6 +457,7 @@ input.gsc-input,
     min-height: 320px;
     margin: 30px;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 #meet-loginform>div {
@@ -471,7 +472,7 @@ input.gsc-input,
     height: 100vh;
     background: url(meet.jpg) fixed, #424242;
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
 }
 
 #meet-iframe iframe {
@@ -490,6 +491,10 @@ input.gsc-input,
 #meet-login-error.text-danger::before {
     content: 'Error : ';
     font-weight: bold;
+}
+
+.grecaptcha-badge {
+    z-index: 10000;
 }
 
 footer {
