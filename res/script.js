@@ -61,12 +61,14 @@ const hyperlinks = [
 
 const bodyData = () => {
     return {
+        date: new Date().getFullYear(),
         subdomains,
         hyperlinks,
         githubToggle: false,
         githubRepos: {},
-        async retrieveRepos() {
-            this.githubRepos = await (await fetch(githubApi)).json();
+        initialize: function () {
+            if (new Date().getFullYear() > 2018) this.date = '2018 - ' + this.date;
+            this.githubRepos = await (fetch(githubApi)).json();
         }
     }
 }

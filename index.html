@@ -35,7 +35,7 @@
     </script>
 </head>
 
-<body x-data="bodyData()" x-init="retrieveRepos">
+<body x-data="bodyData" x-init="initialize">
     <div class="base">
         <ul class="tab">
             <li><a><i class="fas fa-user fa-fw"></i>Profile</a></li>
@@ -72,14 +72,8 @@
                 </template>
             </div>
             <div class="credits">
-                <strong>Mfc</strong> &copy;
-                <script>
-                    if (new Date().getFullYear() > 2018) {
-                        document.write('2018 - ' + new Date().getFullYear());
-                    } else {
-                        document.write(new Date().getFullYear());
-                    }
-                </script>
+                <a class="text-decoration-none text-muted" target="_blank">Mfc</a> &copy;
+                <span x-text="date"></span>
             </div>
         </div>
         <div class="github-repos" :class="githubToggle ? 'open' : ''">
