@@ -56,19 +56,19 @@ const hyperlinks = [
         link: 'mailto:hai@mf-chan.com'
     },
 
-    
+
 ];
 
-const bodyData = () => {
+const alpineData = () => {
     return {
         date: new Date().getFullYear(),
         subdomains,
         hyperlinks,
         githubToggle: false,
         githubRepos: {},
-        initialize: function () {
+        async alpineInit() {
             if (new Date().getFullYear() > 2018) this.date = '2018 - ' + this.date;
-            this.githubRepos = await (fetch(githubApi)).json();
+            axios.get(githubApi).then(response => this.githubRepos = response.data);
         }
     }
 }

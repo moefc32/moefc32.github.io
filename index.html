@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="res/style.css">
 
     <script src="res/alpine.min.js" defer></script>
-    <script src="res/script.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"></script>
     <script>
@@ -35,7 +34,7 @@
     </script>
 </head>
 
-<body x-data="bodyData" x-init="initialize">
+<body x-data="alpineData" x-init="alpineInit">
     <div class="base">
         <ul class="tab">
             <li><a><i class="fas fa-user fa-fw"></i>Profile</a></li>
@@ -89,6 +88,9 @@
         <button class="github-toggle" @click="githubToggle = !githubToggle;"
             x-text="githubToggle ? 'Close This List' : 'View My Project Repositories'"></button>
     </div>
+
+    <script src="res/axios.min.js"></script>
+    <script src="res/script.js"></script>
 </body>
 
 </html>
