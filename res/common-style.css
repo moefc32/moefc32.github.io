@@ -516,6 +516,10 @@ footer a:focus {
     color: #666;
 }
 
+[x-cloak] {
+    display: none !important;
+}
+
 /* tablet screen view */
 
 @media (min-width: 768px) {
