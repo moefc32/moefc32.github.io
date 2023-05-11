@@ -107,7 +107,7 @@ body {
 }
 
 .intro h1 {
-    margin: 0;
+    margin: 0 0 10px;
     font-weight: bold;
     font-size: 2em;
 }
@@ -202,6 +202,11 @@ body {
         overflow: auto;
     }
 
+    abbr {
+        border-bottom: dotted 2px #4caf50;
+        cursor: help;
+    }
+
     .base {
         position: absolute;
         top: 50%;
@@ -240,7 +245,7 @@ body {
     }
 
     .intro h1 {
-        margin: 15px 0 0;
+        margin: 15px 0 5px;
     }
 
     .description {
