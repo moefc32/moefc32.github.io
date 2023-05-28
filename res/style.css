@@ -189,11 +189,6 @@ body {
     color: #888;
 }
 
-.github-repos,
-.github-toggle {
-    display: none;
-}
-
 @media (min-width:600px) {
     .base {
         max-width: 550px;
@@ -287,74 +282,5 @@ body {
 
     .credits {
         font-size: .85em;
-    }
-
-    .github-repos {
-        display: block;
-        width: calc(100% - 50px);
-        height: 15px;
-        margin: -15px auto 0;
-        background: #fff;
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25);
-        border-radius: 0 0 5px 5px;
-        overflow-y: auto;
-        transition: height .5s ease;
-    }
-
-    .github-repos.open {
-        height: calc(100vh - 400px);
-    }
-
-    .github-repos .repository {
-        padding: 10px 15px;
-        transition: .25s;
-    }
-
-    .github-repos .repository:first-of-type {
-        margin-top: 30px;
-    }
-
-    .github-repos .repository:last-child {
-        margin-bottom: 15px;
-    }
-
-    .github-repos .repository:hover {
-        background: #eaeaea;
-    }
-
-    .github-repos .repository:not(:last-child) {
-        border-bottom: solid 1px #ddd;
-    }
-
-    .github-repos .repository span {
-        display: block;
-    }
-
-    .github-repos .repository span:first-child {
-        margin-bottom: 5px;
-        font-size: 1.25rem;
-        font-weight: bold;
-    }
-
-    .github-repos .repository span:last-child {
-        color: #888;
-        font-style: italic;
-        font-size: .85rem;
-    }
-
-    .github-toggle {
-        display: block;
-        margin: 0 auto;
-        padding: 5px 15px;
-        background: #ddd;
-        border: none;
-        border-radius: 0 0 15px 15px;
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25);
-        cursor: pointer;
-        transition: .25s;
-    }
-
-    .github-toggle:hover {
-        background: #eee;
     }
 }

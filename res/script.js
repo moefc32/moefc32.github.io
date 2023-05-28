@@ -1,7 +1,5 @@
 'use strict';
 
-const githubApi = 'https://api.github.com/users/moefc32/repos';
-
 const subdomains = [
     {
         name: 'CV',
@@ -64,11 +62,8 @@ const alpineData = () => {
         date: new Date().getFullYear(),
         subdomains,
         hyperlinks,
-        githubToggle: false,
-        githubRepos: {},
-        async alpineInit() {
+        alpineInit: function () {
             if (new Date().getFullYear() > 2018) this.date = '2018 - ' + this.date;
-            axios.get(githubApi).then(response => this.githubRepos = response.data);
         }
     }
 }

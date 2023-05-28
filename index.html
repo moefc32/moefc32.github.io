@@ -34,7 +34,7 @@
     </script>
 </head>
 
-<body x-data="alpineData" x-init="alpineInit">
+<body x-data="alpineData" x-init="alpineInit()">
     <div class="base">
         <ul class="tab">
             <li><a><i class="fas fa-user fa-fw"></i>Profile</a></li>
@@ -75,18 +75,6 @@
                 <span x-text="date"></span>
             </div>
         </div>
-        <div class="github-repos" :class="githubToggle ? 'open' : ''">
-            <template x-for="repo in githubRepos">
-                <div class="repository">
-                    <a :href="repo.html_url" target="_blank">
-                        <span x-text="repo.name"></span>
-                        <span x-text="repo.description ?? 'No description yet'"></span>
-                    </a>
-                </div>
-            </template>
-        </div>
-        <button class="github-toggle" @click="githubToggle = !githubToggle;"
-            x-text="githubToggle ? 'Close This List' : 'View My Project Repositories'"></button>
     </div>
 
     <script src="res/axios.min.js"></script>
