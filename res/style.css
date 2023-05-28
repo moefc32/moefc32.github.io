@@ -1,3 +1,17 @@
+@keyframes dynamic {
+    0% {
+        background-position: center center, 0 25%;
+    }
+
+    50% {
+        background-position: center center, 100% 75%;
+    }
+
+    100% {
+        background-position: center center, 0 25%;
+    }
+}
+
 * {
     box-sizing: border-box;
     text-decoration: none !important;
@@ -16,10 +30,11 @@ body {
     font-family: 'Lato', sans-serif;
     background: url(texture.png) fixed,
         linear-gradient(to bottom left, #2196f3, #4caf50) fixed;
-    background-size: cover;
+    background-size: cover, 250% 250%;
     color: #424242;
     line-height: 1.618em;
     font-size: 16px;
+    animation: dynamic 2.5s ease infinite;
 }
 
 .base {
