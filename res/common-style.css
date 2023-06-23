@@ -308,6 +308,14 @@ h2.title {
     margin-top: -70px;
 }
 
+.coder-profile img {
+    width: 50vw;
+    height: 50vw;
+    max-width: 180px;
+    max-height: 180px;
+    margin-top: -70px;
+}
+
 #orcid-publications li {
     padding-left: 10px;
 }
