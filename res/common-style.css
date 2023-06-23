@@ -395,14 +395,7 @@ footer a:focus {
     border-radius: 30px;
 }
 
-.researcher-profile img {
-    width: 50vw;
-    height: 50vw;
-    max-width: 180px;
-    max-height: 180px;
-    margin-top: -70px;
-}
-
+.researcher-profile img,
 .coder-profile img {
     width: 50vw;
     height: 50vw;
