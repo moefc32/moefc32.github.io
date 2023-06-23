@@ -14,6 +14,20 @@ body {
     color: #424242;
 }
 
+h2.title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    height: calc(1.5em + 30px);
+    margin: 0;
+    padding: 15px 30px 0 15px;
+    background: linear-gradient(to top, rgba(66, 66, 66, 1), rgba(0, 0, 0, 0));
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
 a {
     transition: .25s;
 }
@@ -30,10 +44,6 @@ object img {
     border: solid 15px #525659;
 }
 
-.btn {
-    font-size: 16px !important;
-}
-
 header .home a {
     margin: 0;
     font-size: 1.5em;
@@ -43,6 +53,141 @@ header .home a {
 
 header .gcse-search {
     width: 100%;
+}
+
+aside .discord {
+    background: #7289da;
+    color: #fff;
+    text-align: center;
+}
+
+aside .discord img {
+    width: 25%;
+    max-width: 120px;
+}
+
+aside .discord h3 {
+    font-size: 1.35em;
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, .85);
+}
+
+aside .discord a {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 30px;
+    color: rgba(255, 255, 255, .65);
+    border: solid 1px rgba(255, 255, 255, .65);
+    border-radius: 5px;
+}
+
+aside .discord a:hover {
+    color: rgba(255, 255, 255, .85);
+    border: solid 1px rgba(255, 255, 255, .85);
+}
+
+footer a {
+    color: #888;
+    font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #666;
+}
+
+#portfolio-toggle button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#orcid-publications li {
+    padding-left: 10px;
+}
+
+#research-showcase a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 30px;
+    text-align: center;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+}
+
+#research-showcase a.gscholar:hover {
+    background: #4285f4;
+}
+
+#research-showcase a.orcid:hover {
+    background: #9dc928;
+}
+
+#research-showcase a.scopus:hover {
+    background: #ff8200;
+}
+
+#research-showcase a.figshare:hover {
+    background: #c63753;
+}
+
+#research-showcase a.researchgate:hover {
+    background: #00ccbb;
+}
+
+#research-showcase a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+#research-showcase img {
+    max-width: 75%;
+    max-height: 50px;
+    transition: .15s all;
+}
+
+#meet-loginform {
+    width: calc(100% - 60px);
+    max-width: 400px;
+    min-height: 320px;
+    margin: 30px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+#meet-loginform>div {
+    border-radius: 10px;
+}
+
+#meet-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(meet.jpg) fixed, #424242;
+    background-size: cover;
+    z-index: 0;
+}
+
+#meet-iframe iframe {
+    display: block;
+    background: #000;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+#meet-login-error {
+    min-height: 38px;
+    line-height: 38px;
+}
+
+#meet-login-error.text-danger::before {
+    content: 'Error : ';
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 1rem !important;
 }
 
 .scroll-indicator {
@@ -227,42 +372,6 @@ header .gcse-search {
     color: #fff;
 }
 
-#portfolio-toggle button:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-aside .discord {
-    background: #7289da;
-    color: #fff;
-    text-align: center;
-}
-
-aside .discord img {
-    width: 25%;
-    max-width: 120px;
-}
-
-aside .discord h3 {
-    font-size: 1.35em;
-    line-height: 1.5em;
-    color: rgba(255, 255, 255, .85);
-}
-
-aside .discord a {
-    display: inline-block;
-    margin: 15px 0;
-    padding: 10px 30px;
-    color: rgba(255, 255, 255, .65);
-    border: solid 1px rgba(255, 255, 255, .65);
-    border-radius: 5px;
-}
-
-aside .discord a:hover {
-    color: rgba(255, 255, 255, .85);
-    border: solid 1px rgba(255, 255, 255, .85);
-}
-
 .project-container {
     display: flex;
     align-items: flex-end;
@@ -273,20 +382,6 @@ aside .discord a:hover {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .15);
     border-radius: 15px;
     overflow: hidden;
-}
-
-h2.title {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 100%;
-    height: calc(1.5em + 30px);
-    margin: 0;
-    padding: 15px 30px 0 15px;
-    background: linear-gradient(to top, rgba(66, 66, 66, 1), rgba(0, 0, 0, 0));
-    color: #fff;
-    font-size: 20px;
-    line-height: 1.25em;
 }
 
 .researcher-profile {
@@ -316,51 +411,8 @@ h2.title {
     margin-top: -70px;
 }
 
-#orcid-publications li {
-    padding-left: 10px;
-}
-
 .paper-title {
     color: #424242;
-}
-
-#research-showcase a {
-    display: inline-block;
-    width: 100%;
-    padding: 15px 30px;
-    text-align: center;
-    border: solid 1px #ddd;
-    border-radius: 5px;
-}
-
-#research-showcase a.gscholar:hover {
-    background: #4285f4;
-}
-
-#research-showcase a.orcid:hover {
-    background: #9dc928;
-}
-
-#research-showcase a.scopus:hover {
-    background: #ff8200;
-}
-
-#research-showcase a.figshare:hover {
-    background: #c63753;
-}
-
-#research-showcase a.researchgate:hover {
-    background: #00ccbb;
-}
-
-#research-showcase a:hover img {
-    filter: brightness(0) invert(1);
-}
-
-#research-showcase img {
-    max-width: 75%;
-    max-height: 50px;
-    transition: .15s all;
 }
 
 .medium-feed-thumbnail {
@@ -459,60 +511,8 @@ input.gsc-input,
     height: 100vh;
 }
 
-#meet-loginform {
-    width: calc(100% - 60px);
-    max-width: 400px;
-    min-height: 320px;
-    margin: 30px;
-    box-sizing: border-box;
-    z-index: 100;
-}
-
-#meet-loginform>div {
-    border-radius: 10px;
-}
-
-#meet-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url(meet.jpg) fixed, #424242;
-    background-size: cover;
-    z-index: 0;
-}
-
-#meet-iframe iframe {
-    display: block;
-    background: #000;
-    border: none;
-    height: 100vh;
-    width: 100vw;
-}
-
-#meet-login-error {
-    min-height: 38px;
-    line-height: 38px;
-}
-
-#meet-login-error.text-danger::before {
-    content: 'Error : ';
-    font-weight: bold;
-}
-
 .grecaptcha-badge {
     z-index: 10000;
-}
-
-footer a {
-    color: #888;
-    font-weight: bold;
-}
-
-footer a:hover,
-footer a:focus {
-    color: #666;
 }
 
 [x-cloak] {
@@ -529,6 +529,10 @@ footer a:focus {
 
     object {
         height: calc(100vh - 300px);
+    }
+
+    #research-showcase a {
+        line-height: 2em;
     }
 
     .certificate-detail .meta .category-label {
@@ -555,15 +559,21 @@ footer a:focus {
     .jumbotron h1 {
         font-size: 2em;
     }
-
-    #research-showcase a {
-        line-height: 2em;
-    }
 }
 
 /* desktop screen view */
 
 @media (min-width: 992px) {
+    #research-showcase a {
+        line-height: 2.5em;
+    }
+
+    #orcid-publications {
+        height: calc(100vh - 280px);
+        min-height: 400px;
+        overflow-y: auto;
+    }
+
     .researcher-profile {
         margin-top: 0;
         border-radius: 500px 50px 50px 500px;
@@ -572,26 +582,16 @@ footer a:focus {
     .researcher-profile img {
         margin-top: 0;
     }
-
-    #research-showcase a {
-        line-height: 2.5em;
-    }
-
-    .orcid-stats #orcid-publications {
-        height: calc(100vh - 280px);
-        min-height: 400px;
-        overflow-y: auto;
-    }
 }
 
 /* large desktop screen view */
 
 @media (min-width: 1200px) {
-    .researcher-profile {
-        margin-left: -30px;
-    }
-
     #research-showcase a {
         line-height: 3em;
+    }
+
+    .researcher-profile {
+        margin-left: -30px;
     }
 }
