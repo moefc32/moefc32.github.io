@@ -448,6 +448,14 @@ footer a:focus {
     border-bottom: solid 1px #ddd;
 }
 
+.repo-icon {
+    width: 30px;
+}
+
+.repo-details {
+    width: 100%;
+}
+
 .certificate-detail h1 {
     margin: 0 0 15px;
     font-size: 2em;
@@ -588,6 +596,10 @@ input.gsc-input,
 
     .researcher-profile img {
         margin-top: 0;
+    }
+
+    .repo-details {
+        width: calc(100% - 30px);
     }
 }
 
