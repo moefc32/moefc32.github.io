@@ -206,7 +206,7 @@ footer a:focus {
     width: 0;
 }
 
-.jumbotron {
+.banner-certificate {
     background: linear-gradient(to bottom left, rgba(33, 150, 243, .75), rgba(76, 175, 80, .75)) fixed,
         url(certificate.jpg) center center no-repeat;
     background-size: cover;
@@ -214,14 +214,21 @@ footer a:focus {
     color: #fff;
 }
 
-.jumbotron h1 {
+.banner-certificate h1 {
     margin: 0 30px 15px;
     font-size: 1.5em;
 }
 
-.jumbotron p {
+.banner-certificate p {
     margin: 0 30px;
     font-size: 16px;
+}
+
+.banner-code {
+    height: 200px;
+    background: linear-gradient(to bottom left, rgba(33, 150, 243, .75), rgba(76, 175, 80, .75)) fixed,
+        url(desk.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 .display-card {
@@ -395,13 +402,20 @@ footer a:focus {
     border-radius: 30px;
 }
 
-.researcher-profile img,
-.coder-profile img {
+.researcher-profile img {
     width: 50vw;
     height: 50vw;
     max-width: 180px;
     max-height: 180px;
     margin-top: -70px;
+}
+
+.coder-profile img {
+    width: 50vw;
+    height: 50vw;
+    max-width: 180px;
+    max-height: 180px;
+    margin-top: -135px;
 }
 
 .paper-title {
@@ -549,7 +563,7 @@ input.gsc-input,
         margin: 0 5px 0 0;
     }
 
-    .jumbotron h1 {
+    .banner-certificate h1 {
         font-size: 2em;
     }
 }
