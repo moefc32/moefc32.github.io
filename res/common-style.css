@@ -326,7 +326,7 @@ hr.decoration {
     overflow: hidden
 }
 
-.carousel .secondary .youtube-wrapper:not(:first-child) {
+.carousel .secondary .youtube-wrapper:not(:first-of-type) {
     margin-top: 15px;
 }
 
