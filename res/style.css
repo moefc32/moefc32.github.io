@@ -19,7 +19,7 @@
 }
 
 a {
-    transition: 0.25s;
+    transition: .25s;
     color: #424242;
 }
 
@@ -49,7 +49,7 @@ body {
     margin: 0 0 -5px;
     padding: 0;
     list-style: none;
-    font-size: 0.85em;
+    font-size: .85em;
 }
 
 .tab li {
@@ -58,7 +58,7 @@ body {
     background: #ddd;
     cursor: pointer;
     border-radius: 10px 10px 0 0;
-    transition: 0.25s;
+    transition: .25s;
 }
 
 .tab li:first-child {
@@ -84,7 +84,7 @@ body {
     padding: 15px;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, .2);
 }
 
 .display-card a {
@@ -93,7 +93,7 @@ body {
 
 .display-card a:hover,
 .display-card a:focus {
-    transition: 0.25s;
+    transition: .25s;
     color: #4caf50;
     opacity: 1;
 }
@@ -112,7 +112,7 @@ body {
     max-width: 200px;
     border: solid 2px #eee;
     border-radius: 50%;
-    transition: 0.25s;
+    transition: .25s;
 }
 
 .intro {
@@ -169,7 +169,7 @@ body {
 
 .hyperlink a {
     padding: 0 2px;
-    opacity: 0.5;
+    opacity: .5;
 }
 
 .credits {
@@ -281,6 +281,6 @@ body {
     }
 
     .credits {
-        font-size: 0.85em;
+        font-size: .85em;
     }
 }

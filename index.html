@@ -37,7 +37,12 @@
 <body x-data="alpineData" x-init="alpineInit()">
     <div class="base">
         <ul class="tab">
-            <li><a><i class="fas fa-user fa-fw"></i>Profile</a></li>
+            <li>
+                <a>
+                    <i class="fa-solid fa-user fa-fw"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
             <template x-for="item in subdomains">
                 <li>
                     <a :href="item.link" target="_blank">
