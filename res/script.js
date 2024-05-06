@@ -26,11 +26,6 @@ const subdomains = [
         icon: 'fa-solid fa-file fa-fw',
         link: 'https://certificate.mf-chan.com'
     },
-    {
-        name: 'Animanga',
-        icon: 'fa-solid fa-cat fa-fw',
-        link: 'https://animanga.mf-chan.com'
-    },
 ];
 
 const hyperlinks = [
