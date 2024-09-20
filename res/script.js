@@ -26,11 +26,11 @@ const subdomains = [
         icon: 'fa-solid fa-file fa-fw',
         link: 'https://certificate.mf-chan.com'
     },
-    {
-        name: 'Mentor',
-        icon: 'fa-solid fa-chalkboard-user fa-fw',
-        link: 'https://mentor.mf-chan.com'
-    },
+    // {
+    //     name: 'Mentor',
+    //     icon: 'fa-solid fa-chalkboard-user fa-fw',
+    //     link: 'https://mentor.mf-chan.com'
+    // },
 ];
 
 const hyperlinks = [
