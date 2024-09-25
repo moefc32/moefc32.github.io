@@ -25,6 +25,8 @@ a {
 
 body {
     position: relative;
+    width: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
@@ -34,6 +36,7 @@ body {
     color: #424242;
     line-height: 1.618em;
     font-size: 16px;
+    overflow: auto;
     animation: dynamic 2.5s ease infinite;
 }
 
@@ -205,13 +208,6 @@ body {
 }
 
 @media (min-width: 900px) {
-    body {
-        position: relative;
-        width: 100%;
-        min-height: 100vh;
-        overflow: auto;
-    }
-
     abbr {
         border-bottom: dotted 2px #4caf50;
         cursor: help;
