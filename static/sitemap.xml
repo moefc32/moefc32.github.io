@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://mf-chan.com</loc>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>https://certificate.mf-chan.com</loc>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://code.mf-chan.com</loc>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://design.mf-chan.com</loc>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://research.mf-chan.com</loc>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://mentor.mf-chan.com</loc>
+      <priority>0.8</priority>
+   </url>
+</urlset>
