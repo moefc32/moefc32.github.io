@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mf-chan.com/sitemap.xml
