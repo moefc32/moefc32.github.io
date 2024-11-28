@@ -9,14 +9,14 @@
   class="mx-6 sm:mx-9 my-auto max-w-[90%] sm:max-w-[700px] lg:max-w-[800px]"
 >
   <ul
-    class="hidden lg:flex justify-start items-end gap-[3px] mx-0 -mb-[3px] p-0 text-sm h-[50px]"
+    class="hidden lg:flex justify-start items-end gap-[3px] m-0 p-0 text-sm h-[50px]"
   >
     {#each subdomain as item, i}
       <li
-        class={"block pb-1 cursor-pointer rounded-t-lg " +
+        class={"block pb-1 cursor-pointer rounded-t-lg h-[36px] " +
           (i === 0
             ? "bg-white"
-            : "bg-gray-200 transition duration-250 ease-in-out hover:-translate-y-[3px] ")}
+            : "bg-gray-200 transition-all duration-250 ease-in-out hover:h-[40px]")}
       >
         <a href={item.link} target="_blank" class="inline-block px-4 py-2">
           <svelte:component
@@ -39,7 +39,7 @@
           <img
             src="og.jpg"
             alt="Profile picture"
-            class="rounded-full transition duration-250 ease-in-out lg:hover:rotate-6"
+            class="rounded-full transition-all duration-250 ease-in-out lg:hover:rotate-6"
             title="Hai!"
           />
         </div>
