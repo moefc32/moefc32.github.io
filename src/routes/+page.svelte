@@ -5,7 +5,7 @@
   const currentYear = (getYear > 2018 ? `2018 - ` : "") + getYear;
 </script>
 
-<section
+<main
   class="mx-6 sm:mx-9 my-auto max-w-[90%] sm:max-w-[700px] lg:max-w-[800px]"
 >
   <ul
@@ -79,4 +79,4 @@
       Mfc &copy; {currentYear}
     </div>
   </div>
-</section>
+</main>
