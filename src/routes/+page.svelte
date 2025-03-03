@@ -5,6 +5,7 @@
     const currentYear = (getYear > 2018 ? `2018 - ` : '') + getYear;
 </script>
 
+<!-- svelte-ignore a11y_img_redundant_alt -->
 <main
     class="mx-6 sm:mx-9 my-auto max-w-[90%] sm:max-w-[700px] lg:max-w-[800px]"
 >
@@ -39,11 +40,10 @@
                 class="mx-auto lg:ms-3 lg:me-0 my-3 lg:my-0 px-3 lg:py-3 w-1/4 lg:w-1/5 min-w-[120px]"
             >
                 <div class="max-w-[200px]">
-                    <!-- svelte-ignore a11y_img_redundant_alt -->
                     <img
-                        src="og.jpg"
+                        src="og.png"
                         alt="Profile picture"
-                        class="rounded-full transition-all duration-250 ease-in-out lg:hover:rotate-6"
+                        class="rounded-full"
                         title="Hai!"
                     />
                 </div>
