@@ -1,5 +1,7 @@
 <script>
     import '../app.css';
+
+    const ogImage = `${import.meta.env.VITE_SITE_URL}/og.png`;
 </script>
 
 <svelte:head>
@@ -14,7 +16,7 @@
         property="og:description"
         content="Faizal Chan. - Strong design management professional with a master of management degree, focused in UX from Telkom University."
     />
-    <meta property="og:image" content="/og.png" />
+    <meta property="og:image" content={ogImage} />
 
     <script
         src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"

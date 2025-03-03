@@ -41,7 +41,7 @@
             >
                 <div class="max-w-[200px]">
                     <img
-                        src="og.png"
+                        src="/og.png"
                         alt="Profile picture"
                         class="rounded-full"
                         title="Hai!"
