@@ -2,6 +2,12 @@
     import '../app.css';
 
     const ogImage = `${import.meta.env.VITE_SITE_URL}/og.png`;
+
+    if ('serviceWorker' in navigator) {
+        addEventListener('load', function () {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
 </script>
 
 <svelte:head>
