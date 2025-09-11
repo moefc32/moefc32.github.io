@@ -63,7 +63,7 @@
                     about UX Engineering or other topics? Feel free to
                     <a
                         href="mailto:hai@mf-chan.com"
-                        class="text-blue-500 hover:text-green-500"
+                        class="text-blue-500 hover:text-green-500 underline"
                     >
                         contact me
                     </a>!
