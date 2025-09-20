@@ -6,9 +6,7 @@
 </script>
 
 <!-- svelte-ignore a11y_img_redundant_alt -->
-<main
-    class="mx-6 sm:mx-9 my-auto max-w-[90%] sm:max-w-[700px] lg:max-w-[800px]"
->
+<main class="max-w-[90%] sm:max-w-[700px] lg:max-w-[800px]">
     <ul
         class="hidden lg:flex justify-start items-end gap-[3px] m-0 p-0 text-sm h-[50px]"
     >

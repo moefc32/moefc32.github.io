@@ -44,4 +44,6 @@
     </script>
 </svelte:head>
 
-<slot />
+<div class="flex flex-1 justify-center items-center p-6">
+    <slot />
+</div>

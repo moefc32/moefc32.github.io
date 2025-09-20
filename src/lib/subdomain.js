@@ -1,9 +1,9 @@
-import { User, List, Search, Brush, Code, File } from 'lucide-svelte';
+import { UserRound, List, Search, Brush, Code, MessageSquareQuote, FileBadge } from 'lucide-svelte';
 
 export const subdomain = [
     {
         name: 'Profile',
-        icon: User,
+        icon: UserRound,
         link: '/',
     },
     {
@@ -22,8 +22,13 @@ export const subdomain = [
         link: 'https://code.mf-chan.com',
     },
     {
+        name: 'Mentor',
+        icon: MessageSquareQuote,
+        link: 'https://mentor.mf-chan.com',
+    },
+    {
         name: 'Certificate',
-        icon: File,
+        icon: FileBadge,
         link: 'https://certificate.mf-chan.com',
     },
 ];
