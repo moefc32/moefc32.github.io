@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@plugin 'daisyui';
+
+@import '@fontsource-variable/noto-sans';
+
+@keyframes dynamic {
+    0% {
+        background-position: center center, 0 25%;
+    }
+
+    50% {
+        background-position: center center, 100% 75%;
+    }
+
+    100% {
+        background-position: center center, 0 25%;
+    }
+}
+
+body {
+    background: url(/texture.webp) fixed,
+        linear-gradient(to bottom left, #2196f3, #4caf50) fixed;
+    background-size: cover, 250% 250%;
+    font-family: 'Noto Sans Variable', sans-serif;
+    animation: dynamic 2.5s ease infinite;
+}
