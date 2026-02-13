@@ -7,7 +7,7 @@
         "dev": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "deploy": "test -f .env && (pnpm build && pnpx gh-pages -d build --dotfiles) || echo 'Error occured, deploy aborted!'"
+        "deploy": "test -f .env && (pnpm build && pnpx gh-pages -d dist --dotfiles) || echo 'Error occured, deploy aborted!'"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.1.18",
