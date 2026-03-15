@@ -21,6 +21,9 @@ export default defineConfig({
                 },
             }),
         ],
+        resolve: {
+            noExternal: ['lucide-svelte'],
+        },
     },
     integrations: [
         svelte(),

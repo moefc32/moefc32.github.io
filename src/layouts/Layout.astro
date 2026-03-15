@@ -2,8 +2,6 @@
 import '../styles/global.css';
 import 'aos/dist/aos.css';
 
-import { ClientRouter } from 'astro:transitions';
-
 import RegisterSW from '../components/RegisterSW.svelte';
 
 const { pageTitle } = Astro.props;
@@ -37,8 +35,6 @@ const openGraph = {
         <meta property="og:image" content="/og.png" />
         <meta property="og:type" content="website" />
 
-        <ClientRouter />
-
         <script
             src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"
             async></script>
@@ -56,7 +52,6 @@ const openGraph = {
 
     <body
         class="flex flex-col justify-center items-center w-full min-h-screen overflow-auto"
-        data-sveltekit-preload-data="hover"
         data-theme="light"
     >
         <div style="display: contents">
