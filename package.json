@@ -17,10 +17,10 @@
         "vite-plugin-pwa": "^1.2.0"
     },
     "dependencies": {
-        "@astrojs/svelte": "^7.2.5",
+        "@astrojs/svelte": "^8.0.0",
         "@fontsource-variable/noto-sans": "^5.2.10",
         "aos": "^2.3.4",
-        "astro": "^5.18.1",
+        "astro": "^6.0.4",
         "chart.js": "^4.5.1",
         "lucide-svelte": "^0.563.0",
         "svelte": "^5.53.12"
