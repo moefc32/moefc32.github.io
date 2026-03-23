@@ -1,1 +1,0 @@
-import{i as r}from"./lifecycle.BwcEfFNs.js";import{as as o,an as i}from"./runtime.Di3kbjJ0.js";function n(a,e){i(e,!1),"serviceWorker"in navigator&&!["localhost","127.0.0.1"].includes(location.hostname)&&addEventListener("load",function(){navigator.serviceWorker.register("/service-worker.js")}),r(),o()}export{n as default};
