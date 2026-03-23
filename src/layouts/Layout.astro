@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import 'aos/dist/aos.css';
 
-import RegisterSW from '../components/RegisterSW.svelte';
+import RegisterSW from '../components/RegisterSW.astro';
 
 const { pageTitle } = Astro.props;
 
@@ -57,6 +57,6 @@ const openGraph = {
         <div style="display: contents">
             <slot />
         </div>
-        <RegisterSW client:load />
+        <RegisterSW />
     </body>
 </html>
