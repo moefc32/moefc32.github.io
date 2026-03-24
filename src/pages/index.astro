@@ -4,7 +4,7 @@ import Subdomains from '../components/Subdomains.svelte';
 ---
 
 <Layout>
-    <main class="max-w-[90%] sm:max-w-[700px] lg:max-w-[800px]">
+    <main class="mt-40 mb-12 lg:mt-12 max-w-[min(90%,750px)] lg:max-w-[850px]">
         <ul
             class="hidden lg:flex justify-start items-end gap-[3px] m-0 p-0 text-sm h-[50px]"
         >
@@ -15,35 +15,47 @@ import Subdomains from '../components/Subdomains.svelte';
                 <div
                     class="mx-auto lg:ms-3 lg:me-0 my-3 lg:my-0 px-3 lg:py-3 w-1/4 lg:w-1/5 min-w-[120px]"
                 >
-                    <div class="max-w-[200px]">
-                        <img
-                            src="/og.png"
-                            alt="Profile picture"
-                            class="rounded-full"
-                            title="Hai!"
-                        />
+                    <div class="avatar -mt-36 lg:mt-0">
+                        <div
+                            class="max-w-[200px] border-white border-4 rounded-full"
+                        >
+                            <img src="/og.png" alt="Faizal Chan." />
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="px-3 md:px-12 lg:px-3 text-center lg:text-left lg:w-3/4"
+                    class="flex flex-col gap-3 px-3 md:px-12 lg:px-3 text-center lg:text-left lg:w-3/4"
                 >
-                    <h1 class="mb-1 lg:mt-3 lg:mb-1 text-3xl">
-                        Faizal
-                        <abbr class="cursor-help" title="Chaniago">
-                            Chan.
-                        </abbr>
-                    </h1>
-                    <p class="mt-1 mb-3 text-gray-400">@moefc32</p>
-                    <p class="mb-3 lg:mb-6">
-                        Strong design management professional with a master of
-                        management degree from Telkom University. Need mentoring
-                        about UX Engineering or other topics? Feel free to
-                        <a
+                    <div class="flex flex-col gap-1">
+                        <h1 class="lg:mt-3 text-3xl">
+                            Faizal
+                            <abbr class="cursor-help" title="Chaniago">
+                                Chan.
+                            </abbr>
+                        </h1>
+                        <p class="text-gray-400">@moefc32</p>
+                    </div>
+                    <hr
+                        class="lg:hidden mx-auto mt-1 mb-3 bg-gray-300 w-[50px] h-[5px] border-0"
+                    />
+                    <p>
+                        Hi! I solve human problems by identifying root causes
+                        and shaping them into practical, well-structured
+                        solutions.
+                    </p>
+                    <p>
+                        My work spans research, design, and code to ensure
+                        decisions are grounded, solutions are usable, and
+                        implementations remain efficient, each representing a
+                        different layer of how I approach problem-solving.
+                    </p>
+                    <p class="mb-3 lg:mb-9">
+                        Want to collaborate? Feel free to <a
                             href="mailto:hai@mf-chan.com"
                             class="text-blue-500 hover:text-green-500 underline"
                         >
-                            contact me
-                        </a>!
+                            contact me</a
+                        >!
                     </p>
                 </div>
                 <div class="flex flex-col gap-1 lg:hidden my-6 px-3">
