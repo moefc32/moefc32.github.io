@@ -2,7 +2,6 @@
 import '../styles/global.css';
 import 'aos/dist/aos.css';
 
-
 const { pageTitle } = Astro.props;
 
 const siteTitle = import.meta.env.PUBLIC_APP_NAME;
@@ -23,7 +22,7 @@ const openGraph = {
         <link rel="icon" type="image/png" href="/og.png" />
 
         <title>
-            {pageTitle ? `${pageTitle} | ${openGraph.title}` : siteTitle}
+            {pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle}
         </title>
         <meta name="description" content={siteDescription} />
         <meta name="generator" content={Astro.generator} />

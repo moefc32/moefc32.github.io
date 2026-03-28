@@ -20,10 +20,10 @@
         "@astrojs/svelte": "^8.0.4",
         "@fontsource-variable/noto-sans": "^5.2.10",
         "aos": "^2.3.4",
-        "astro": "^6.1.1",
+        "astro": "^6.1.5",
         "chart.js": "^4.5.1",
         "lucide-svelte": "^0.563.0",
-        "svelte": "^5.55.0"
+        "svelte": "^5.55.2"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
