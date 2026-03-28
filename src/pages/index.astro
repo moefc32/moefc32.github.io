@@ -4,29 +4,25 @@ import Subdomains from '../components/Subdomains.svelte';
 ---
 
 <Layout>
-    <main class="mt-40 mb-12 lg:mt-12 max-w-[min(90%,750px)] lg:max-w-[850px]">
+    <main class="mt-40 mb-12 lg:mt-12 max-w-[min(90vw,750px)] lg:max-w-210">
         <ul
-            class="hidden lg:flex justify-start items-end gap-[3px] m-0 p-0 text-sm h-[50px]"
+            class="hidden lg:flex justify-start items-end gap-0.75 m-0 p-0 text-sm h-12"
         >
             <Subdomains client:load />
         </ul>
         <div class="p-3 bg-white rounded-xl lg:rounded-tl-none shadow-lg">
-            <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col lg:flex-row px-3">
                 <div
-                    class="mx-auto lg:ms-3 lg:me-0 my-3 lg:my-0 px-3 lg:py-3 w-1/4 lg:w-1/5 min-w-[120px]"
+                    class="flex-none mx-auto -mt-12 mb-3 lg:mt-0 lg:my-0 px-3 lg:py-3"
                 >
-                    <div class="avatar -mt-36 lg:mt-0">
-                        <div
-                            class="max-w-[200px] border-white border-4 rounded-full"
-                        >
+                    <div class="avatar">
+                        <div class="w-44 border-white border-4 rounded-full">
                             <img src="/og.png" alt="Faizal Chan." />
                         </div>
                     </div>
                 </div>
-                <div
-                    class="flex flex-col gap-3 px-3 md:px-12 lg:px-3 text-center lg:text-left lg:w-3/4"
-                >
-                    <div class="flex flex-col gap-1">
+                <div class="flex flex-col gap-3 px-3 lg:px-3 lg:grow">
+                    <div class="flex flex-col gap-1 text-center lg:text-left">
                         <h1 class="lg:mt-3 text-3xl">
                             Faizal
                             <abbr class="cursor-help" title="Chaniago">
@@ -36,7 +32,7 @@ import Subdomains from '../components/Subdomains.svelte';
                         <p class="text-gray-400">@moefc32</p>
                     </div>
                     <hr
-                        class="lg:hidden mx-auto mt-1 mb-3 bg-gray-300 w-[50px] h-[5px] border-0"
+                        class="lg:hidden mx-auto mt-1 mb-3 bg-gray-300 w-12 h-1 border-0"
                     />
                     <p>
                         Hi! I solve human problems by identifying root causes

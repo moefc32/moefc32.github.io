@@ -2,9 +2,8 @@ import { UserRound, Search, Brush, Code, MessageSquareQuote, FileBadge } from 'l
 
 export const subdomain = [
     {
-        name: 'Profile',
+        name: 'Intro',
         icon: UserRound,
-        link: '/',
     },
     {
         name: 'Research',
