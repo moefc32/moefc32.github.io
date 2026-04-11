@@ -10,20 +10,19 @@
         "deploy": "test -f .env && (astro build && pnpx gh-pages -d dist --dotfiles) || echo 'Error occured, deploy aborted!'"
     },
     "devDependencies": {
-        "@tailwindcss/vite": "^4.2.2",
+        "@tailwindcss/vite": "^4.2.4",
         "@vite-pwa/astro": "^1.2.0",
         "daisyui": "^5.5.19",
         "gh-pages": "^6.3.0",
-        "tailwindcss": "^4.2.2"
+        "tailwindcss": "^4.2.4"
     },
     "dependencies": {
-        "@astrojs/svelte": "^8.0.4",
+        "@astrojs/svelte": "^8.1.0",
         "@fontsource-variable/noto-sans": "^5.2.10",
         "aos": "^2.3.4",
-        "astro": "^6.1.5",
-        "chart.js": "^4.5.1",
+        "astro": "^6.2.2",
         "lucide-svelte": "^0.563.0",
-        "svelte": "^5.55.2"
+        "svelte": "^5.55.5"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
