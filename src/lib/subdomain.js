@@ -1,4 +1,4 @@
-import { UserRound, Search, Brush, Code, MessageSquareQuote, FileBadge } from 'lucide-svelte';
+import { UserRound, Search, Brush, Code, MessageSquareQuote, FileBadge } from '@lucide/svelte';
 
 export const subdomain = [
     {
