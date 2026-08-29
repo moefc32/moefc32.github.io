@@ -58,8 +58,7 @@ import Subdomains from '../components/Subdomains.svelte';
                 </div>
             </div>
             <footer class="mb-3 text-gray-500 text-center lg:text-sm">
-                Mfc &copy;
-                <span data-footer-year></span>
+                <span data-copyright>Mfc &copy;</span>
             </footer>
         </div>
     </main>
@@ -69,6 +68,5 @@ import Subdomains from '../components/Subdomains.svelte';
     const getYear = new Date().getFullYear();
     const currentYear = (getYear > 2018 ? `2018 - ` : '') + getYear;
 
-    const footerYear = document.querySelector('[data-footer-year]');
-    if (footerYear) footerYear.textContent = currentYear;
+    document.querySelector('[data-copyright]').append(` ${currentYear}`);
 </script>
