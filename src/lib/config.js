@@ -1,10 +1,14 @@
 import { UserRound, Search, Brush, Code, MessageSquareQuote, FileBadge } from '@lucide/svelte';
+const siteName = `Faizal Chan's Website`;
 
-export const subdomain = [
-    {
-        name: 'Intro',
-        icon: UserRound,
-    },
+export const metadata = {
+    siteName,
+    title: siteName,
+    description: 'A multidisciplinary problem solver working across disciplines to identify root causes and shape practical, well-structured solutions.',
+    type: 'website',
+};
+
+export const subsites = [
     {
         name: 'Research',
         tooltip: 'Problem framing',
@@ -35,4 +39,12 @@ export const subdomain = [
         icon: FileBadge,
         link: 'https://certificate.mf-chan.com',
     },
+];
+
+export const tabs = [
+    {
+        name: 'Intro',
+        icon: UserRound,
+    },
+    ...subsites,
 ];

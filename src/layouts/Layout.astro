@@ -2,29 +2,27 @@
 import '../styles/global.css';
 import 'aos/dist/aos.css';
 import { imageSizeFromFile } from 'image-size/fromFile';
+import { metadata } from '../lib/config';
 
 const { pageTitle } = Astro.props;
 
 const defaultFavicon = '/res/favicon.png';
 const imageDimensions = await imageSizeFromFile('./public' + defaultFavicon);
 
-const siteTitle = import.meta.env.PUBLIC_APP_NAME;
-const formattedTitle = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle;
-const siteDescription =
-    'Faizal Chan, a strong design management professional with a master of management degree, focused in UX from Telkom University.';
+const formattedTitle = pageTitle
+    ? `${pageTitle} | ${metadata.title}`
+    : metadata.title;
 const siteUrl = import.meta.env.DEV
     ? Astro.url.origin
     : import.meta.env.PUBLIC_SITE_URL.replace(/\/+$/, '');
 
 const openGraph = {
-    siteName: "Faizal Chan's Website",
-    description: 'Main website of Faizal Chan.',
     image: {
         url: defaultFavicon,
         width: imageDimensions?.width,
         height: imageDimensions?.height,
     },
-    type: 'website',
+    ...metadata,
 };
 ---
 
@@ -36,7 +34,7 @@ const openGraph = {
         <link rel="icon" type="image/png" href={defaultFavicon} />
 
         <title>{formattedTitle}</title>
-        <meta name="description" content={siteDescription} />
+        <meta name="description" content={metadata.description} />
         <meta name="generator" content={Astro.generator} />
 
         <meta property="og:title" content={formattedTitle} />
@@ -55,6 +53,7 @@ const openGraph = {
         />
 
         <script
+    is:inline
             src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"
             async></script>
         <script is:inline>
