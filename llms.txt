@@ -1,0 +1,11 @@
+# Faizal Chan's Website
+
+> A multidisciplinary problem solver working across disciplines to identify root causes and shape practical, well-structured solutions.
+
+## Subsites
+
+- [Research](https://research.mf-chan.com)
+- [Design](https://design.mf-chan.com)
+- [Code](https://code.mf-chan.com)
+- [Mentor](https://mentor.mf-chan.com)
+- [Certificate](https://certificate.mf-chan.com)
